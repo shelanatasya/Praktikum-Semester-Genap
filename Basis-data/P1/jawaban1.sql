@@ -1,4 +1,4 @@
--- Active: 1729062427921@@127.0.0.1@3306@praktikum2
+-- Active: 1736687440739@@127.0.0.1@3306@praktikum2
 CREATE DATABASE praktikum2;
 use praktikum2;
 
@@ -85,5 +85,4 @@ UPDATE karyawan SET id_karyawan = 2 where nama = 'budi santoso';
 --3
 DELETE FROM gaji where id_karyawan = 10;
 
---4
-SELECT janis_kelamin from karyawan where jenis_kelamin = 'L';
+ 
