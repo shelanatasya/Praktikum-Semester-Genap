@@ -29,10 +29,12 @@ CREATE table karyawan(
 );
 
 CREATE TABLE jabatan(
-    id_jabatan INT PRIMARY KEY,
+    id_jabatan INT PRIMARY KEY AUTO_INCREMENT,
     nama_jabatan VARCHAR(50),
     gaji_pokok DECIMAL(10,2)
 );
+
+
 
 INSERT INTO karyawan(id_karyawan,nama,tanggal_lahir,jenis_kelamin,id_jabatan) VALUES
 (1, 'Ahmad Santoso', '1985-02-10', 'L', 1),
