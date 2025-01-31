@@ -9,6 +9,11 @@ CREATE table users(
     role ENUM('admin', 'kasir')
 );
 
+
+INSERT INTO users(username,password,role) VALUES
+('admin','admin','admin'),
+('kasir','kasir','kasir');
+
 CREATE table books(
     id_buku INT AUTO_INCREMENT PRIMARY KEY,
     kode_buku VARCHAR(30),
@@ -49,3 +54,7 @@ CREATE table discounts(
     aktif BOOLEAN DEFAULT TRUE
 
 );
+
+INSERT INTO books(kode_buku,judul,pengarang,penerbit,harga,stok) VALUES
+('0-22',"matahari","budi","ilham",'500000',20),
+('1-23',"bunga","asep","akif",600000,'30');
