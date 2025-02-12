@@ -1,4 +1,4 @@
--- Active: 1736687440739@@127.0.0.1@3306@rekap_absensi
+-- Active: 1736687440739@@127.0.0.1@3306
 CREATE DATABASE rekap_absensi;
 use rekap_absensi;
 
