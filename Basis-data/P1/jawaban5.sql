@@ -1,6 +1,6 @@
--- Active: 1736687440739@@127.0.0.1@3306@trigger_perpustakaan
-CREATE DATABASE trigger_perpustakaan;
-use trigger_perpustakaan;
+-- Active: 1736687440739@@127.0.0.1@3306@trigger_perpustakaan3
+CREATE DATABASE trigger_perpustakaan3;
+use trigger_perpustakaan3;
 
 CREATE table anggota(
     id_anggota BIGINT AUTO_INCREMENT PRIMARY KEY,
