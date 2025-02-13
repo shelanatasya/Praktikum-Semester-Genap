@@ -1,4 +1,4 @@
--- Active: 1736687440739@@127.0.0.1@3306
+-- Active: 1736687440739@@127.0.0.1@3306@toko
 CREATE DATABASE toko;
 use toko;
 
@@ -37,9 +37,7 @@ CREATE table transaction_details(
     id_transaksi INT,
     id_buku int,
     jumlah INT,
-    subtotal DECIMAL(15, 2),
-    Foreign Key (id_transaksi) REFERENCES transactions(id_transaksi),
-    Foreign Key (id_buku) REFERENCES books(id_buku)
+    subtotal DECIMAL(15, 2)
 );
 
 
