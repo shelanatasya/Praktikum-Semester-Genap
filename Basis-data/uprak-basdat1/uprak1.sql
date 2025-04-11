@@ -44,18 +44,20 @@ END
 
 --5
 DELIMITER$$
-CREATE Trigger produk
-BEFORE INSERT
-on penjualan
-FOR EACH ROW
-BEGIN 
-DECLARE stok INTEGER;
-set stok = (select stok INTO stok produk WHERE kode_produk = NEW.kode_produk);
-  if stok < NEW.stok THEN
-SIGNAL SQLSTATE '45000'
-SET MESSAGE_TEXT = "stok tidak mencukupi";
-   END if;
-END$$
+--CREATE Trigger produk
+--BEFORE INSERT
+--on penjualan
+--FOR EACH ROW
+--BEGIN 
+--DECLARE stok INTEGER;
+--set stok = (select stok INTO stok produk WHERE kode_produk = NEW.kode_produk);
+  --if stok < NEW.stok THEN
+--SIGNAL SQLSTATE '45000'
+--SET MESSAGE_TEXT = "stok tidak mencukupi";
+  -- END if;
+--END$$
 
 INSERT INTO produk(kode_produk,deskripsi,harga_beli,harga_jual,stok) VALUES
 ('MAO-001','PERTAMINA 1L',45000,60000,6),
+
+

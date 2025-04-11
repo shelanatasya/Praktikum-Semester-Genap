@@ -13,4 +13,5 @@ CREATE table user(
 INSERT into user(nama_lengkap,email,tanggal_lahir,kata_sandi) VALUES
 ("natasya","natasyashela@gmail.com",'22-05-2006',"shelanatasya");
 
+
 --DROP Table user;

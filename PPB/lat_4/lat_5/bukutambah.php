@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "./config_db.php";
+include "config_db.php";
 
 $tampil = "SELECT * FROM books";
 

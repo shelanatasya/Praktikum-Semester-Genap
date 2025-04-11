@@ -1,5 +1,5 @@
 <?php
-include "../lat_3/config_db.php";
+include "../uprak-ppb/config_db.php ";
 
 // ambil data buku
 $query = "SELECT * FROM books";

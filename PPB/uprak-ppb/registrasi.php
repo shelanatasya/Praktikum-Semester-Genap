@@ -25,6 +25,3 @@
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</body>
-</html>
